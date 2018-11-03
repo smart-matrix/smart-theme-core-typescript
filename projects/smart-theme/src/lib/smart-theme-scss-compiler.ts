@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ThemeConfiguration } from '@smart-matrix/smart-schema';
-import { IThemeCompiler } from 'smart-theme/lib/svc/smart-theme-compiler.service';
+import { IThemeCompiler } from './smart-theme.core';
 
 @Injectable({
   providedIn: 'root'

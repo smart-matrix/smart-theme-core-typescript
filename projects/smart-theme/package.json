@@ -1,0 +1,11 @@
+{
+  "name": "@smart-matrix/smart-theme",
+  "version": "0.0.2",
+  "scripts": {
+    "version:patch": "npm version patch"
+  },
+  "peerDependencies": {
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0"
+  }
+}

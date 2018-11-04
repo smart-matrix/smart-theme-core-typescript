@@ -5,9 +5,12 @@ import { IThemeCompiler } from './smart-theme.core';
 @Injectable({
   providedIn: 'root'
 })
-export class SmartThemeSCSSCompilerService implements IThemeCompiler {
+export class SmartThemeSCSSCompilerService extends IThemeCompiler {
     //  API Methods
     public CompileTheme(theme: ThemeConfiguration): string {
+        if (!theme)
+            return 'body {}';
+            
         return this.processThemeNode(theme.Theme, null, -1);
     }
   
